@@ -13,4 +13,10 @@ jobs:
     steps:
       - name: print welcome message
         run: echo "HELLO BORTHER, AND WELCOME TO THE REPOSITORY"
+        
+      - name: checkout repository
+        uses: actions/checkout@v4.2.2
+
+      - name: list repository file
+        run: ls -la
   
