@@ -1,0 +1,16 @@
+name: first github workflow action
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  example-job:
+    runs-on: ubuntu-latest
+
+
+    steps:
+      - name: print welcome message
+        run: echo "HELLO BORTHER, AND WELCOME TO THE REPOSITORY"
+  
